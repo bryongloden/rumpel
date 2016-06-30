@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Rumpel</title>
+  <base href="/rumpel/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.8.0/fullcalendar.min.css">
+  <link rel="stylesheet" type="text/css" href="vendor/primeui/primeui-ng-all.min.css" />
+  <link rel="stylesheet" type="text/css" href="/webfonts/ss-glyphish-outlined.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <rumpel>Loading...</rumpel>
+
+    <script src="vendor/es6-shim/es6-shim.js"></script>
+    <script src="vendor/reflect-metadata/Reflect.js"></script>
+    <script src="vendor/systemjs/dist/system.src.js"></script>
+    <script src="vendor/zone.js/dist/zone.js"></script>
+    <script src="https://npmcdn.com/packery@2.0/dist/packery.pkgd.min.js"></script>
+    <script>
+      System.import('system-config.js').then(function () {
+        System.import('main');
+      }).catch(console.error.bind(console));
+    </script>
+    <script type="text/javascript" src="/vendor/leaflet/dist/leaflet.js"></script>
+    <script type="text/javascript" src="/vendor/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.1/jquery-ui-timepicker-addon.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.7.2/fullcalendar.min.js"></script>
+
+</body>
+</html>

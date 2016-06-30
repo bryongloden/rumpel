@@ -1,0 +1,58 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="offer">
+      <div class="offer-title">
+        <h2 class="text-center">{{offerInfo.offer.title}}</h2>
+        <div class="offer-reward text-center">
+          <a href="{{offerInfo.offer.reward.vendorUrl}}" target="_blank">{{offerInfo.offer.reward.vendor}}</a>
+          {{offerInfo.offer.reward.rewardType | lowercase}}: {{offerInfo.offer.reward.value}}
+        </div>
+        <div class="offer-description text-center">{{offerInfo.offer.description}}</div>
+      </div>
+      <div class="offer-dialog text-center">
+        <button class="btn btn-rump btn-accept"
+                (click)="acceptDataDebit()">Accept Offer</button>
+        <button class="btn btn-rump"
+                (click)="rejectDataDebit()">Decline Offer</button>
+      </div>
+      <div class="alert-message text-center">
+        <span class="icon-alert ss-alert"></span>
+        You're almost there, you need to retrieve one or more data sources to qualify for this offer.
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 debit-review">
+        <div class="panel panel-rump">
+          <div class="panel-heading">Facebook</div>
+          <div class="panel-body">
+            <ul>
+              <li class="data-debit-unit">
+                <span class="table">Events</span><span class="field">id</span>Facebook event ID.
+              </li>
+              <li class="data-debit-unit">
+                <span class="table">Events</span><span class="field">Start Time</span>Event starting time.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 offer-terms">
+        <div class="panel panel-rump">
+          <div class="panel-heading">Terms of Offer</div>
+          <div class="panel-body">
+            <h3>{{offerInfo.offer.title}}</h3>
+            <h5>Contact Information</h5>
+            <p>{{offerInfo.owner.firstName + ' ' + offerInfo.owner.lastName}}</p>
+            <p>E-mail: {{offerInfo.owner.email}}</p>
+            <h5>Validity</h5>
+            <p>The offer is running from {{offerInfo.offer.starts | moment:'Do MMM, YYYY'}} to {{offerInfo.offer.expires | moment:'Do MMM, YYYY'}}.</p>
+            <h5>Data sources required for the offer</h5>
+            <ul>
+              <li *ngFor="let set of offerInfo.offer.dataRequest.definition">{{set.source}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

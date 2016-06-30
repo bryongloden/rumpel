@@ -1,0 +1,42 @@
+.navbar {
+  background-color: #010101;
+  min-height: unset;
+  height: 122px;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  margin: 0;
+  border-radius: 0; }
+  .navbar.smaller {
+    font-size: 0.75em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    height: 74px; }
+
+.navbar-nav {
+  font-size: 2em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: lighter;
+  text-transform: capitalize; }
+  .navbar-nav li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fefefe; }
+  .navbar-nav.navbar-right {
+    padding-left: 0.5em;
+    padding-right: 0.5em; }
+    .navbar-nav.navbar-right li {
+      border-left: solid 0.05em #fefefe; }
+      .navbar-nav.navbar-right li:first-child {
+        border-left: none; }
+      .navbar-nav.navbar-right li a:hover {
+        background-color: transparent; }
+
+.navbar-header .navbar-brand {
+  color: #fefefe;
+  font-size: 4em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  height: 1em; }
