@@ -1,0 +1,392 @@
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
+    <form #f="ngForm" (submit)="submitForm($event)">
+      <section class="personal">
+        <div class="section-title">Personal</div>
+        <span class="group-privacy-toggle ss-view"
+              [class.public]="profile.personal.private === 'false'"
+              (click)="togglePrivacy('personal')"></span>
+
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" class="form-control rump-input rump-md" id="title" name="title"
+                [(ngModel)]="profile.personal.title"
+                aria-describedby="title">
+        </div>
+
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" class="form-control rump-input rump-md" id="firstName" name="firstName"
+                [(ngModel)]="profile.personal.first_name"
+                aria-describedby="firstName">
+        </div>
+
+        <div class="form-group">
+          <label for="middleName">Middle Name</label>
+          <input type="text" class="form-control rump-input rump-md" id="middleName" name="middleName"
+                [(ngModel)]="profile.personal.middle_name"
+                aria-describedby="middleName">
+        </div>
+
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" class="form-control rump-input rump-md" id="lastName" name="lastName"
+                [(ngModel)]="profile.personal.last_name"
+                aria-describedby="lastName">
+        </div>
+
+        <div class="form-group">
+          <label for="preferredName">Preferred Name</label>
+          <input type="text" class="form-control rump-input rump-md" id="preferredName" name="preferredName"
+                [(ngModel)]="profile.personal.preferred_name"
+                aria-describedby="preferredName">
+        </div>
+      </section>
+
+      <section class="other">
+        <div class="section-title">Other</div>
+
+        <div class="form-group">
+          <label for="nickname">Nickname</label>
+          <div class="input-group">
+            <input type="text" class="form-control rump-input rump-md" id="nickname" name="nickname"
+                  [(ngModel)]="profile.nick.name"
+                  aria-describedby="nickname">
+            <span class="input-group-btn">
+              <button class="btn" type="button"
+                      [class.public]="profile.nick.private === 'false'"
+                      (click)="togglePrivacy('nick')">
+                <span class="field-privacy-toggle ss-view"></span></button>
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <div class="input-group">
+            <input type="text" class="form-control rump-input rump-md" id="dob" name="dob"
+                  [(ngModel)]="profile.birth.date"
+                  aria-describedby="dob">
+            <span class="input-group-btn">
+              <button class="btn" type="button"
+                      [class.public]="profile.birth.private === 'false'"
+                      (click)="togglePrivacy('birth')">
+              <span class="field-privacy-toggle ss-view"></span></button>
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <div class="input-group">
+            <input type="text" class="form-control rump-input rump-md" id="gender" name="gender"
+                  [(ngModel)]="profile.gender.type"
+                  aria-describedby="gender">
+            <span class="input-group-btn">
+              <button class="btn public" type="button"
+                      [class.public]="profile.gender.private === 'false'"
+                      (click)="togglePrivacy('gender')">
+                <span class="field-privacy-toggle ss-view"></span></button>
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="ageGroup">Age Group</label>
+          <div class="input-group">
+            <input type="text" class="form-control rump-input rump-md" id="ageGroup" name="ageGroup"
+                  [(ngModel)]="profile.age.group"
+                  aria-describedby="ageGroup">
+            <span class="input-group-btn">
+              <button class="btn" type="button"
+                      [class.public]="profile.age.private === 'false'"
+                      (click)="togglePrivacy('age')">
+                <span class="field-privacy-toggle ss-view"></span></button>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="section-title">Contact</div>
+
+        <div class="form-group">
+          <label for="primaryEmail">Primary Email</label>
+          <div class="input-group">
+            <input type="text" class="form-control rump-input rump-md" id="primaryEmail" name="primaryEmail"
+                  [(ngModel)]="profile.primary_email.value"
+                  aria-describedby="primaryEmail">
+            <span class="input-group-btn">
+              <button class="btn" type="button"
+                      [class.public]="profile.primary_email.private === 'false'"
+                      (click)="togglePrivacy('primary_email')">
+                <span class="field-privacy-toggle ss-view"></span></button>
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="alternativeEmail">Alternative Email</label>
+          <div class="input-group">
+            <input type="text" class="form-control rump-input rump-md" id="alternativeEmail" name="alternativeEmail"
+                  [(ngModel)]="profile.alternative_email.value"
+                  aria-describedby="alternativeEmail">
+            <span class="input-group-btn">
+              <button class="btn" type="button"
+                      [class.public]="profile.alternative_email.private === 'false'"
+                      (click)="togglePrivacy('alternative_email')">
+                <span class="field-privacy-toggle ss-view"></span></button>
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="homePhone">Phone Number</label>
+          <div class="input-group">
+            <input type="text" class="form-control rump-input rump-md" id="homePhone" name="homePhone"
+                  [(ngModel)]="profile.home_phone.no"
+                  aria-describedby="homePhone">
+            <span class="input-group-btn">
+              <button class="btn" type="button"
+                      [class.public]="profile.home_phone.private === 'false'"
+                      (click)="togglePrivacy('home_phone')">
+                <span class="field-privacy-toggle ss-view"></span></button>
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="mobile">Mobile Number</label>
+          <div class="input-group">
+            <input type="text" class="form-control rump-input rump-md" id="mobile" name="mobile"
+                  [(ngModel)]="profile.mobile.no"
+                  aria-describedby="mobile">
+            <span class="input-group-btn">
+              <button class="btn" type="button"
+                      [class.public]="profile.mobile.private === 'false'"
+                      (click)="togglePrivacy('mobile')">
+                <span class="field-privacy-toggle ss-view"></span></button>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="address">
+        <div class="section-title">Address</div>
+        <span class="group-privacy-toggle ss-view"
+              [class.public]="profile.address_details.private === 'false'"
+              (click)="toggleGroupPrivacy('address_details')"></span>
+
+        <div class="form-group">
+          <label for="houseNumber">House/Flat number</label>
+          <input type="text" class="form-control rump-input rump-md" id="houseNumber" name="houseNumber"
+                [(ngModel)]="profile.address_details.no"
+                aria-describedby="houseNumber">
+        </div>
+
+        <div class="form-group">
+          <label for="street">Street name</label>
+          <input type="text" class="form-control rump-input rump-md" id="street" name="street"
+                [(ngModel)]="profile.address_details.street"
+                aria-describedby="street">
+        </div>
+
+        <div class="form-group">
+          <label for="postcode">Postcode / zip code</label>
+          <input type="text" class="form-control rump-input rump-md" id="postcode" name="postcode"
+                [(ngModel)]="profile.address_details.postcode"
+                aria-describedby="postcode">
+        </div>
+
+        <div class="form-group">
+          <label for="city">City</label>
+          <input type="text" class="form-control rump-input rump-md" id="city" name="city"
+                [(ngModel)]="profile.address_global.city"
+                aria-describedby="city">
+        </div>
+
+        <div class="form-group">
+          <label for="county">State / County</label>
+          <input type="text" class="form-control rump-input rump-md" id="county" name="county"
+                [(ngModel)]="profile.address_global.county"
+                aria-describedby="county">
+        </div>
+
+        <div class="form-group">
+          <label for="country">Country</label>
+          <input type="text" class="form-control rump-input rump-md" id="country" name="country"
+                [(ngModel)]="profile.address_global.country"
+                aria-describedby="country">
+        </div>
+      </section>
+
+      <section class="online-profiles">
+        <div class="section-title">Online Profiles</div>
+
+        <div class="form-group">
+          <label for="website">Website</label>
+          <div class="input-group">
+            <input type="text" class="form-control rump-input rump-md" id="website" name="website"
+                  [(ngModel)]="profile.website.link"
+                  aria-describedby="website">
+            <span class="input-group-btn">
+              <button class="btn" type="button"
+                      [class.public]="profile.website.private === 'false'"
+                      (click)="togglePrivacy('website')">
+                <span class="field-privacy-toggle ss-view"></span></button>
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="blog">Blog</label>
+          <div class="input-group">
+            <input type="text" class="form-control rump-input rump-md" id="blog" name="blog"
+                  [(ngModel)]="profile.blog.link"
+                  aria-describedby="blog">
+            <span class="input-group-btn">
+              <button class="btn" type="button"
+                      [class.public]="profile.blog.private === 'false'"
+                      (click)="togglePrivacy('blog')">
+                <span class="field-privacy-toggle ss-view"></span></button>
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="facebook">Facebook profile</label>
+          <div class="input-group">
+            <input type="text" class="form-control rump-input rump-md" id="facebook" name="facebook"
+                  [(ngModel)]="profile.facebook.link"
+                  aria-describedby="facebook">
+            <span class="input-group-btn">
+              <button class="btn" type="button"
+                      [class.public]="profile.facebook.private === 'false'"
+                      (click)="togglePrivacy('facebook')">
+                <span class="field-privacy-toggle ss-view"></span></button>
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="linkedin">LinkedIn profile</label>
+          <div class="input-group">
+            <input type="text" class="form-control rump-input rump-md" id="linkedin" name="linkedin"
+                  [(ngModel)]="profile.linkedin.link"
+                  aria-describedby="linkedin">
+            <span class="input-group-btn">
+              <button class="btn" type="button"
+                      [class.public]="profile.linkedin.private === 'false'"
+                      (click)="togglePrivacy('linkedin')">
+                <span class="field-privacy-toggle ss-view"></span></button>
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="twitter">Twitter</label>
+          <div class="input-group">
+            <input type="text" class="form-control rump-input rump-md" id="twitter" name="twitter"
+                  [(ngModel)]="profile.twitter.link"
+                  aria-describedby="twitter">
+            <span class="input-group-btn">
+              <button class="btn" type="button"
+                      [class.public]="profile.twitter.private === 'false'"
+                      (click)="togglePrivacy('twitter')">
+                <span class="field-privacy-toggle ss-view"></span></button>
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="google">Google+</label>
+          <div class="input-group">
+            <input type="text" class="form-control rump-input rump-md" id="google" name="google"
+                  [(ngModel)]="profile.google.link"
+                  aria-describedby="google">
+            <span class="input-group-btn">
+              <button class="btn" type="button"
+                      [class.public]="profile.google.private === 'false'"
+                      (click)="togglePrivacy('google')">
+                <span class="field-privacy-toggle ss-view"></span></button>
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="youtube">Youtube channel</label>
+          <div class="input-group">
+            <input type="text" class="form-control rump-input rump-md" id="youtube" name="youtube"
+                [(ngModel)]="profile.youtube.link"
+                aria-describedby="youtube">
+            <span class="input-group-btn">
+              <button class="btn" type="button"
+                      [class.public]="profile.youtube.private === 'false'"
+                      (click)="togglePrivacy('youtube')">
+                <span class="field-privacy-toggle ss-view"></span></button>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="emergency-contact">
+        <div class="section-title">Emergency Contact</div>
+        <span class="group-privacy-toggle ss-view"
+              [class.public]="profile.emergency_contact.private === 'false'"
+              (click)="togglePrivacy('emergency_contact')"></span>
+
+        <div class="form-group">
+          <label for="emFirstName">First Name</label>
+          <input type="text" class="form-control rump-input rump-md" id="emFirstName" name="emFirstName"
+              [(ngModel)]="profile.emergency_contact.first_name"
+              aria-describedby="emFirstName">
+        </div>
+
+        <div class="form-group">
+          <label for="emLastName">Last Name</label>
+          <input type="text" class="form-control rump-input rump-md" id="emLastName" name="emLastName"
+              [(ngModel)]="profile.emergency_contact.last_name"
+              aria-describedby="emLastName">
+        </div>
+
+        <div class="form-group">
+          <label for="emMobile">Mobile number</label>
+          <input type="text" class="form-control rump-input rump-md" id="emMobile" name="emMobile"
+              [(ngModel)]="profile.emergency_contact.mobile"
+              aria-describedby="emMobile">
+        </div>
+
+        <div class="form-group">
+          <label for="relationship">Relationship</label>
+          <input type="text" class="form-control rump-input rump-md" id="relationship" name="relationship"
+              [(ngModel)]="profile.emergency_contact.relationship"
+              aria-describedby="relationship">
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="section-title">About</div>
+        <span class="group-privacy-toggle ss-view"
+              [class.public]="profile.about.private === 'false'"
+              (click)="togglePrivacy('about')"></span>
+
+        <div class="form-group">
+          <label for="aboutTitle">Title</label>
+          <input type="text" class="form-control rump-input rump-md" id="aboutTitle" name="aboutTitle"
+              [(ngModel)]="profile.about.title"
+              aria-describedby="aboutTitle">
+        </div>
+
+        <div class="form-group">
+          <label for="body">Body</label>
+          <textarea class="form-control rump-input" id="body" name="body" rows="5"
+                    [(ngModel)]="profile.about.body"
+                    aria-describedby="body"></textarea>
+        </div>
+      </section>
+
+      <button type="button" class="btn btn-rump" (click)="discardChanges()">Discard</button>
+      <button type="submit" class="btn btn-rump">Save Changes</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+<h2>{{day | moment:'Do MMMM YYYY'}}</h2>
+<hr>
+
+<div class="view-body">
+
+  <div [hidden]="visibility.eve">
+    <h4>Events</h4>
+    <hr>
+    <ul>
+      <li *ngFor="let eve of events" (click)="selectTime(eve.start)">
+        <div>{{eve.title}}</div>
+      </li>
+    </ul>
+  </div>
+
+  <div [hidden]="visibility.loc">
+    <h4>Locations</h4>
+    <hr>
+    <ul>
+      <li *ngFor="let loc of locations" (click)="selectTime(loc.start)">
+        <div>{{loc.latitude}} {{loc.longitude}}</div>
+      </li>
+    </ul>
+  </div>
+
+  <div [hidden]="visibility.img">
+    <h4>Photos</h4>
+    <hr>
+    <!-- <ul>
+      <li *ngFor="let img of images" (click)="selectTime(img.start)">
+        <img [src]="img.url" style="width: 100px;">
+        <div>Time taken: {{img.start | moment}}</div>
+      </li>
+    </ul> -->
+  </div>
+</div>

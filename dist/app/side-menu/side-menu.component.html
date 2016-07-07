@@ -1,0 +1,11 @@
+<ul class="center">
+  <li *ngFor="let item of menuItems"
+      (click)="onItemSelect(item.display)"
+      [class.selected]="item.display === selectedItem">
+    <a [routerLink]="[item.link]">
+      <span class="ss-{{item.icon}}"></span>
+      {{item.display}}
+    </a>
+  </li>
+</ul>
+
