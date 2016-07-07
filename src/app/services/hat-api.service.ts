@@ -13,7 +13,7 @@ export class HatApiService {
   constructor(private _http: Http) {}
 
   updateCredentials(domain: string, token: string) {
-    this._baseUrl = 'https://' + domain + ':' + HAT_PORT;
+    this._baseUrl = 'https://' + domain;
     this._token = token;
     this._headers = new Headers();
     this._headers.append('Content-Type', 'application/json');
