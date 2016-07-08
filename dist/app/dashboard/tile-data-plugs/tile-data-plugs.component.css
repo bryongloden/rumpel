@@ -6733,9 +6733,27 @@ h1, h2, h3, h4, h5 {
   padding-left: 0px; }
   .tile-body li h1, .tile-body li h2, .tile-body li h3, .tile-body li h4, .tile-body li h5, .tile-body li h6 {
     margin-top: 0;
-    padding-top: 0; }
+    margin-bottom: 0.25em;
+    padding-top: 0;
+    font-size: 1.3em; }
+  .tile-body li p {
+    font-size: 0.8em; }
 
-.col-xs-2, .col-xs-10 {
+.col-xs-2, .col-xs-8 {
   margin: 0;
   padding-left: 0.5em;
   padding-right: 0.5em; }
+  .col-xs-2 a, .col-xs-8 a {
+    color: #ffffff;
+    text-decoration: none; }
+    .col-xs-2 a span, .col-xs-8 a span {
+      font-size: 1.5em; }
+
+.vertical-align {
+  display: flex;
+  flex-direction: row; }
+
+.vertical-align > .col-xs-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
