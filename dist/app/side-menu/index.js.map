@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../Users/gusdev/code/rumpel/tmp/broccoli_type_script_compiler-input_base_path-f2J48Fb3.tmp/0/src/app/side-menu/index.ts"],"names":[],"mappings":";AAAA,oCAAkC,uBAAuB,CAAC;AAAjD,oEAAiD","sourcesContent":["export { SideMenuComponent } from './side-menu.component';\n"]}
