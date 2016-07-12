@@ -6734,8 +6734,11 @@ h1, h2, h3, h4, h5 {
     margin-left: 0.25em;
     font-family: 'Open Sans Regular', sans-serif; }
 
-.tile-expand {
-  float: right; }
+.info-button {
+  background-color: transparent;
+  border: none;
+  float: right;
+  color: #ffffff; }
 
 .tile-body {
   overflow: hidden; }
