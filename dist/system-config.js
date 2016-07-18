@@ -45,6 +45,7 @@ var barrels = [
     'app/pipes',
     'app/transactions',
     'app/profile',
+    'app/issue',
 ];
 var cliSystemConfigPackages = {};
 barrels.forEach(function (barrelName) {
