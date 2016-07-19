@@ -6722,7 +6722,7 @@ h1, h2, h3, h4, h5 {
 .content-main {
   background: #010101; }
   .content-main .menubar-left {
-    min-width: 7em;
+    min-width: 6em;
     background: #010101;
     color: white;
     float: left;
@@ -6734,6 +6734,11 @@ h1, h2, h3, h4, h5 {
     min-height: 95vh;
     padding-left: 0;
     padding-right: 0; }
+  .content-main .grid {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-left: 0; }
 
 /* More or less global styles */
 :host /deep/ .view-header {
