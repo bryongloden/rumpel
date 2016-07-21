@@ -24,12 +24,17 @@
   .navbar-nav li > a {
     padding-top: 10px;
     padding-bottom: 10px;
-    color: #fefefe; }
+    color: #ffffff; }
+  .navbar-nav .user-nav > p {
+    margin: 0;
+    padding: 10px 15px;
+    color: #ffffff;
+    line-height: 20px; }
   .navbar-nav.navbar-right {
     padding-left: 0.5em;
     padding-right: 0.5em; }
     .navbar-nav.navbar-right li {
-      border-left: solid 0.05em #fefefe; }
+      border-left: solid 0.05em #ffffff; }
       .navbar-nav.navbar-right li:first-child {
         border-left: none; }
       .navbar-nav.navbar-right li a:hover {
