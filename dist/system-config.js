@@ -7,13 +7,11 @@
 /** Map relative paths to URLs. */
 var map = {
     'moment': 'vendor/moment',
-    'primeng': 'vendor/primeng',
     'angular2-jwt': 'vendor/angular2-jwt'
 };
 /** User packages configuration. */
 var packages = {
     'moment': { format: 'cjs', main: 'moment.js' },
-    'primeng': { defaultExtension: 'js' },
     'angular2-jwt': { main: 'angular2-jwt.js' }
 };
 ////////////////////////////////////////////////////////////////////////////////////////////////

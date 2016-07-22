@@ -1,7 +1,7 @@
 .navbar {
   background-color: #010101;
   min-height: unset;
-  height: 122px;
+  height: 9em;
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
   -o-transition: all 500ms;
@@ -14,20 +14,19 @@
     font-size: 0.75em;
     padding-top: 2em;
     padding-bottom: 2em;
-    height: 74px; }
+    height: 9ems; }
 
 .navbar-nav {
-  font-size: 2em;
+  font-size: 2.5em;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: lighter;
   text-transform: capitalize; }
   .navbar-nav li > a {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 0.5em 0.5em;
     color: #ffffff; }
   .navbar-nav .user-nav > p {
     margin: 0;
-    padding: 10px 15px;
+    padding: 0.5em 0.5em;
     color: #ffffff;
     line-height: 20px; }
   .navbar-nav.navbar-right {
@@ -43,11 +42,10 @@
 .navbar-header .navbar-brand {
   color: #fefefe;
   font-size: 4em;
-  font-family: 'Open Sans Condensed', sans-serif;
   height: 1em; }
 
 .navbar-header img {
-  height: 1em; }
+  height: 1.25em; }
 
 .navbar-header a {
   padding: 0;

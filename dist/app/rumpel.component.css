@@ -6741,54 +6741,50 @@ h1, h2, h3, h4, h5 {
     margin-left: 0; }
 
 /* More or less global styles */
-:host /deep/ .view-header {
-  background-color: #37474F;
-  color: #eeeeee;
-  padding: 1em 1em;
-  font-size: 1em; }
-
-:host /deep/ .btn-rump {
-  border-radius: 0;
-  font-size: 1.5em;
-  margin: 1em 1em;
-  padding: 0.75em 4em;
-  background-color: #37474F;
-  text-transform: uppercase;
-  color: #ffffff; }
-
-:host /deep/ .rump-input {
-  font-family: 'Open Sans Regular', sans-serif;
-  border-radius: 0;
-  border: 1px solid #c7c7c7;
-  -webkit-transition: all 0.30s ease-in-out;
-  -moz-transition: all 0.30s ease-in-out;
-  -ms-transition: all 0.30s ease-in-out;
-  -o-transition: all 0.30s ease-in-out;
-  outline: none; }
-  :host /deep/ .rump-input::-webkit-input-placeholder {
-    font-weight: normal; }
-  :host /deep/ .rump-input::-moz-placeholder {
-    font-weight: normal; }
-  :host /deep/ .rump-input:-ms-input-placeholder {
-    font-weight: normal; }
-  :host /deep/ .rump-input:-moz-placeholder {
-    font-weight: normal; }
-  :host /deep/ .rump-input:focus {
-    box-shadow: 0 0 5px #018675; }
-
-:host /deep/ .rump-lg {
-  font-size: 1.5em;
-  height: 3em; }
-
-:host /deep/ .rump-md {
-  font-size: 1.25em;
-  height: 3em; }
-
-:host /deep/ .rump-sm {
-  font-size: 0.75em;
-  height: 1.5em; }
-
-:host /deep/ ul {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
+:host /deep/ {
+  font-family: 'Open Sans Condensed', sans-serif; }
+  :host /deep/ .view-header {
+    background-color: #37474F;
+    color: #eeeeee;
+    padding: 1em 1em;
+    font-size: 1em; }
+  :host /deep/ .btn-rump {
+    border-radius: 0;
+    font-size: 1.5em;
+    margin: 1em 1em;
+    padding: 0.75em 4em;
+    background-color: #37474F;
+    text-transform: uppercase;
+    color: #ffffff; }
+  :host /deep/ .rump-input {
+    font-family: 'Open Sans Regular', sans-serif;
+    border-radius: 0;
+    border: 1px solid #c7c7c7;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none; }
+    :host /deep/ .rump-input::-webkit-input-placeholder {
+      font-weight: normal; }
+    :host /deep/ .rump-input::-moz-placeholder {
+      font-weight: normal; }
+    :host /deep/ .rump-input:-ms-input-placeholder {
+      font-weight: normal; }
+    :host /deep/ .rump-input:-moz-placeholder {
+      font-weight: normal; }
+    :host /deep/ .rump-input:focus {
+      box-shadow: 0 0 5px #018675; }
+  :host /deep/ .rump-lg {
+    font-size: 1.5em;
+    height: 3em; }
+  :host /deep/ .rump-md {
+    font-size: 1.25em;
+    height: 3em; }
+  :host /deep/ .rump-sm {
+    font-size: 0.75em;
+    height: 1.5em; }
+  :host /deep/ ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
