@@ -6719,31 +6719,54 @@ h1, h2, h3, h4, h5 {
     font-family: "Open Sans Condensed", sans-serif;
     background: #ececec; }
 
-.view-header {
-  text-align: center; }
+.landing {
+  background-image: url("images/landing_bg.jpg");
+  background-repeat: repeat;
+  min-height: 75em; }
 
 .view-body {
-  text-align: center; }
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
+  .view-body .logo {
+    height: 6em;
+    margin-top: 2em; }
+  .view-body p {
+    color: #ffffff;
+    font-size: 1.8em;
+    margin-top: 2em; }
+    .view-body p.subtext {
+      font-size: 1.4em; }
+  .view-body .highlight {
+    font-weight: 600; }
 
 .form-group {
-  margin-top: 30%;
-  text-align: left; }
+  margin-top: 3em;
+  text-align: left;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300; }
   .form-group label {
-    color: #9c9c9c;
-    text-transform: uppercase; }
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.25em; }
 
 .btn-rump {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  display: block;
+  width: 100%;
   border-radius: 0;
   font-size: 1.5em;
-  margin: 1em 1em;
+  margin: 1em 0;
   padding: 0.75em 4em;
-  background-color: #37474F;
+  background-color: #018675;
   text-transform: uppercase;
   color: #ffffff; }
 
 .rump-input {
-  font-family: 'Open Sans Regular', sans-serif;
-  font-size: 1.5em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6em;
   height: 3em;
   border-radius: 0;
   border: 1px solid #c7c7c7; }
@@ -6755,3 +6778,21 @@ h1, h2, h3, h4, h5 {
     font-weight: normal; }
   .rump-input:-moz-placeholder {
     font-weight: normal; }
+
+.form {
+  width: 80%;
+  margin: auto; }
+
+a {
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: underline; }
+  a:hover {
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: underline; }
+
+.form-context {
+  color: #ffffff;
+  font-size: 1.2em;
+  font-family: 'Open Sans', sans-serif; }
