@@ -15,6 +15,6 @@ export class RumpelAppComponent implements OnInit {
   title = 'rumpel2 works!';
 
   ngOnInit() {
-    console.log("Rumpel is running. Version: 0.0.1");
+    console.log("Rumpel is running. Version: 0.0.2");
   }
 }
