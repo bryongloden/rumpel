@@ -12,11 +12,12 @@
   padding-left: 0px; }
   .tile-body li h1, .tile-body li h2, .tile-body li h3, .tile-body li h4, .tile-body li h5, .tile-body li h6 {
     margin-top: 0;
-    margin-bottom: 0.25em;
+    margin-bottom: 0.2em;
     padding-top: 0;
-    font-size: 1.1em; }
+    font-size: 1.4em;
+    text-transform: uppercase; }
   .tile-body li p {
-    font-size: 0.8em; }
+    font-size: 1em; }
 
 .col-xs-2, .col-xs-8 {
   margin: 0;
