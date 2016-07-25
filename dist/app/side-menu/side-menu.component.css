@@ -19,6 +19,9 @@ ul {
       background: #262626; }
     ul li:hover {
       background-color: #262626; }
+    ul li button {
+      background-color: transparent;
+      border: none; }
 
 .disable {
   position: absolute;

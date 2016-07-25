@@ -73,3 +73,15 @@
     list-style: none;
     margin: 0;
     padding: 0; }
+
+.modal {
+  font-family: 'Open Sans Condensed', sans-serif;
+  z-index: 7000; }
+  .modal h4 {
+    font-size: 3em; }
+  .modal p {
+    font-size: 2em; }
+  .modal button {
+    font-size: 1.5em; }
+  .modal .btn-primary {
+    background-color: #018675; }

@@ -18,6 +18,10 @@
     text-transform: uppercase; }
   .tile-body li p {
     font-size: 1em; }
+  .tile-body li button {
+    background-color: transparent;
+    border: none;
+    font-size: 2em; }
 
 .col-xs-2, .col-xs-8 {
   margin: 0;

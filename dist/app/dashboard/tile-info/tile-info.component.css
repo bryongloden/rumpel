@@ -13,3 +13,14 @@
 .card-text {
   font-size: 2.5em;
   text-transform: uppercase; }
+
+.modal {
+  font-family: 'Open Sans Condensed', sans-serif; }
+  .modal h4 {
+    font-size: 3em; }
+  .modal p {
+    font-size: 2em; }
+  .modal button {
+    font-size: 1.5em; }
+  .modal .btn-primary {
+    background-color: #018675; }

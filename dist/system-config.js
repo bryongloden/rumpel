@@ -7,12 +7,14 @@
 /** Map relative paths to URLs. */
 var map = {
     'moment': 'vendor/moment',
-    'angular2-jwt': 'vendor/angular2-jwt'
+    'angular2-jwt': 'vendor/angular2-jwt',
+    'ng2-bs3-modal': 'vendor/ng2-bs3-modal'
 };
 /** User packages configuration. */
 var packages = {
     'moment': { format: 'cjs', main: 'moment.js' },
-    'angular2-jwt': { main: 'angular2-jwt.js' }
+    'angular2-jwt': { main: 'angular2-jwt.js' },
+    'ng2-bs3-modal': { defaultExtension: 'js', main: 'ng2-bs3-modal.js' }
 };
 ////////////////////////////////////////////////////////////////////////////////////////////////
 /***********************************************************************************************
