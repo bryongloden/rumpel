@@ -97,6 +97,12 @@ export class HatApiService {
       .map(res => res.json());
   }
 
+  getAllDataDebits() {
+    const url = this._baseUrl + '/dataDebit';
+    return this._http.get(url, { headers: this._headers })
+      .map(res => res.json());
+  }
+
   updateDataDebit(uuid: string, state: string): Observable<any> {
     const url = this._baseUrl + '/directDebit/' + uuid + '/' + state;
 
