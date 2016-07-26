@@ -6796,3 +6796,12 @@ a {
   color: #ffffff;
   font-size: 1.2em;
   font-family: 'Open Sans', sans-serif; }
+  .form-context span {
+    text-decoration: underline;
+    cursor: pointer; }
+
+.form-context2 {
+  color: #ffffff;
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 1em; }
