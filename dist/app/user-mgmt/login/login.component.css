@@ -6734,7 +6734,7 @@ h1, h2, h3, h4, h5 {
   .view-body p {
     color: #ffffff;
     font-size: 1.8em;
-    margin-top: 2em; }
+    margin-top: 1.5em; }
     .view-body p.subtext {
       font-size: 1.4em; }
   .view-body .highlight {
@@ -6798,7 +6798,8 @@ a {
   font-family: 'Open Sans', sans-serif; }
   .form-context span {
     text-decoration: underline;
-    cursor: pointer; }
+    cursor: pointer;
+    font-weight: bold; }
 
 .form-context2 {
   color: #ffffff;
